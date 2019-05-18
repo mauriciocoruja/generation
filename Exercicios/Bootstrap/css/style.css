@@ -1,40 +1,49 @@
-body{
+body {
 	background-image: url(../images/bg-body.png);
 }
-img#logo{
+
+img#logo {
 	border-radius: 100%;
 	border: solid 2px black;
 	display: block;
 	margin: 20px auto;
 }
-li{
+
+li {
 	list-style: none;
 }
-header nav li div{
+
+header nav li div {
 	list-style: none;
 	background-color: #b42221;
-	text-align:center;
+	text-align: center;
 	color: #fff;
-	padding: 10px 0;		
+	padding: 10px 0;
 
 }
-ul{
-	padding:0;
+
+ul {
+	padding: 0;
 }
-.button{
+
+.button {
 	background-color: rgba(0, 0, 0, 0.7);
 	color: #fff;
 	border: none;
 	width: 30%;
-	
+
 }
-.caixa{
+
+.caixa {
 	position: relative;
 }
-#banner img,.caixa img{
+
+#banner img,
+.caixa img {
 	width: 100%;
 }
-footer .container{
+
+footer .container {
 	background-color: red;
 	border-radius: 20px 20px 0 0;
 	text-align: center;
@@ -42,30 +51,33 @@ footer .container{
 	height: 100%;
 	padding-top: 25px;
 }
-footer ul.row{
-	display: flex;
-	justify-content: center;
-	width: 50%
+
+footer ul.row {
+	margin: 0 auto 20px;
+	width: 70%;
+
 
 }
-footer ul.row li{
-	border-left: solid 1px;
 
+@media only screen and (min-width: 992px) {
+	footer ul.row li {
+		border-left: solid 1px;
+	}
 }
-ul.row li.st{
+
+ul.row li.st {
 	border-left: none;
 }
 
-#produtos{
+#produtos {
 	margin-top: 20px;
 }
-p{
+
+p {
 	max-height: 100px;
 	overflow-y: auto
 }
-.caixa{
+
+.caixa {
 	margin: 10px 0;
 }
-	
-
-
