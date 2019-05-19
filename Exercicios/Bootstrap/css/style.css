@@ -1,6 +1,7 @@
 .selector-for-some-widget {
-  box-sizing: content-box;
+	box-sizing: content-box;
 }
+
 body {
 	background-image: url(../images/bg-body.png);
 }
@@ -24,7 +25,8 @@ header nav li div {
 	padding: 10px 0;
 }
 
-ul,.normal {
+ul,
+.normal {
 	padding: 0;
 }
 
@@ -39,20 +41,25 @@ ul,.normal {
 .caixa img {
 	width: 100%;
 }
+
 .caixa {
 	margin: 10px 0;
 	position: relative;
 }
-button.carousel-caption{
+
+button.ampliar{
 	position: absolute;
-  	top: 70%;
-  	bottom: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
 	width: 100%;
-	background-color: rgba(0,0,0, .5);
-	padding: 0 0 25px;
+	bottom: 10%;
+	background-color: rgba(0, 0, 0, .5);
 	border: none;
+	color: #fff
+}
+
+img.free {
+	width: 30%;
+	position: absolute;
+	right: 0;
 }
 
 footer .container {
@@ -66,7 +73,7 @@ footer .container {
 
 footer ul.row {
 	font-size: 0.9em;
-	display: block;	
+	display: block;
 }
 
 #produtos {
