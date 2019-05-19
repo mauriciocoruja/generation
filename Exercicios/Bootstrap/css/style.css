@@ -1,3 +1,6 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 body {
 	background-image: url(../images/bg-body.png);
 }
@@ -19,7 +22,6 @@ header nav li div {
 	text-align: center;
 	color: #fff;
 	padding: 10px 0;
-
 }
 
 ul {
@@ -31,7 +33,6 @@ ul {
 	color: #fff;
 	border: none;
 	width: 30%;
-
 }
 
 .caixa {
@@ -53,20 +54,8 @@ footer .container {
 }
 
 footer ul.row {
-	margin: 0 auto 20px;
-	width: 70%;
-
-
-}
-
-@media only screen and (min-width: 992px) {
-	footer ul.row li {
-		border-left: solid 1px;
-	}
-}
-
-ul.row li.st {
-	border-left: none;
+	font-size: 0.9em;
+	display: block;	
 }
 
 #produtos {
