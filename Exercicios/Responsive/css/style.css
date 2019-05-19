@@ -5,7 +5,7 @@ body {}
 header {
 	width: 100vw;
 	height: 20vh;
-	background-color: #d65ad1;
+	background-color: #001970;
 
 }
 
@@ -16,22 +16,23 @@ header {
 	display: flex;
 }
 
+
 .caixa-a {
 	width: 20.8%;
-	background-color: #d44d4d;
+	background-color: #bbdefb;
 	border: solid 1px;
 }
 
 .caixa-b {
 	width: 66.6%;
-	background-color: #7dfc78;
+	background-color: #f9f9f9;
 	border: solid 1px;
 	margin: 0 2.1%;
 }
 
 .caixa-c {
 	width: 8%;
-	background-color: #78abfc;
+	background-color: #c2185b;
 	border: solid 1px;
 
 }
@@ -47,24 +48,49 @@ p {
 strong {
 	font-size: .93em;
 }
-@media (max-width: 900px) {
-  .container{
-	  padding: 20px;
-	  width: 95%;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
-  }
-	.caixa-a{
+
+@media only screen and (max-width: 900px) {
+	.container {
+		padding: 20px;
+		width: 95%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.caixa-a {
 		width: 40%;
 		justify-content: flex-start;
 	}
-	.caixa-b{
+
+	.caixa-b {
 		width: 55%;
 		margin: 0;
 	}
-	.caixa-c{
+
+	.caixa-c {
 		width: 100%;
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 1.3em;
+	}
 
+	.container {
+		flex-flow: column nowrap;
+		width: 100%;
+		display: flex;
+		padding: 0%
+	}
+
+	.caixa-a,
+	.caixa-b,
+	.caixa-c {
+		width: 100%;
+	}
+	p,h2{
+		padding: 0% 5%;
+		text-align: justify;
+	}
+}
