@@ -73,8 +73,19 @@ for (let i=0; i < diasDaSemana.length; i++){
 }
 */
 
+/*
 var senha = true
 while (senha) {
     console.log("Entrou");
     senha = false;
+}
+*/
+senha = true;
+i = 0;
+
+do {
+	console.log(i)
+
+} while {
+
 }
