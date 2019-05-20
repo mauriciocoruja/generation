@@ -166,5 +166,14 @@ nomeFuncao();
 // console.log(numeros);
 
 /*-----------------------------------*/
-
-
+let carro = {
+	marca: "chevrolet",
+	modelo: "corsa",
+	km: 65000,
+	cor: "azul",
+	ligar:function(nome){console.log("vrum vrum")},
+	motorista: function(nome) {console.log(nome + " está dirigindo")},
+	donos: ["Pedro", "Clara", "João"]
+}
+console.log(carro.ligar());
+console.log(carro.motorista("Rachador"));
