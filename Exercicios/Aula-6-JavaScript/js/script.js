@@ -61,6 +61,8 @@ for (let i=0; i < diasDaSemana.length; i++){
 	console.log(diasDaSemana[i]);
 }
 */
+
+/*
 var diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
 
 for (let i=0; i < diasDaSemana.length; i++){
@@ -69,9 +71,10 @@ for (let i=0; i < diasDaSemana.length; i++){
 		break;
 	}
 }
+*/
 
-
-
-
-
-
+var senha = true
+while (senha) {
+    console.log("Entrou");
+    senha = false;
+}
