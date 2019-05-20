@@ -80,6 +80,7 @@ while (senha) {
     senha = false;
 }
 */
+/*
 senha = true;
 i = 0;
 
@@ -89,3 +90,42 @@ do {
 } while {
 
 }
+*/
+
+function imprimir (valor){
+	console.log(valor);
+}
+ imprimir('Seja bem-vindo, meu consagrado');
+
+//
+function produto(a, b) {
+	return a * b;
+}
+console.log("A multiplicação dos produtos é "+produto(10, 2));
+//
+let nomeFuncao = function (){
+	console.log('Olá');
+}
+nomeFuncao();
+// Função aninhada
+// function circunferencia(raio) {
+// 	function diametro(){
+// 		return raio*2;
+// 	}
+// }
+
+//
+/*function a(callback){
+		console.log('a vem primeiro');
+	setTimeout(function(){
+		callback();
+	}, 3000);
+}
+
+function b() {
+	console.log("b vem depois");
+}
+a(b);*/
+//
+
+//
