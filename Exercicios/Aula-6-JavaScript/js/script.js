@@ -1,4 +1,5 @@
-/*var diaDaSemana = "Sexta-Feira";
+/*
+var diaDaSemana = "Sexta-Feira";
 
 if (diaDaSemana == "Domingo") {
 	console.log("Dia do churrasco");
@@ -11,7 +12,11 @@ if (diaDaSemana == "Domingo") {
 }
 console.log("Programa finalizado");
 
-(diaDaSemana == "Sexta-Feira") ? console.log("Dia de ping-pong") : console.log("Dia de estudar");*/
+(diaDaSemana == "Sexta-Feira") ? console.log("Dia de ping-pong") : console.log("Dia de estudar");
+*/
+
+
+/*
 var sintomas = prompt("Qual o sintoma? Tosse ou febre: ")
 switch (sintomas){
 	case "tosse":
@@ -23,3 +28,17 @@ switch (sintomas){
 	default:
 		alert("Virose");
 }
+*/
+
+var cnh = true;
+var idade = 18;
+
+if (idade >= 18 && cnh == false){
+	console.log("Pode tirar CNH");
+}else{
+	console.log("Complete a idade minima ou você já possui CNH")
+}
+console.log("Programa finalizado")
+
+
+
