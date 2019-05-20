@@ -42,6 +42,7 @@ if (idade >= 18 && cnh == false){
 console.log("Programa finalizado")
 */
 
+/*
 var colorOne = "green";
 var colorTwo = "yellow";
 
@@ -50,5 +51,15 @@ if (colorOne == "green" || colorTwo == "yellow"){
 }else{
 	console.log("This is another flag")
 }
+*/
+var diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+
+for (let i=0; i < diasDaSemana.length; i++){
+	console.log(i);
+	console.log(diasDaSemana[i]);
+}
+
+
+
 
 
