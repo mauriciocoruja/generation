@@ -30,6 +30,7 @@ switch (sintomas){
 }
 */
 
+/*
 var cnh = true;
 var idade = 18;
 
@@ -39,6 +40,15 @@ if (idade >= 18 && cnh == false){
 	console.log("Complete a idade minima ou você já possui CNH")
 }
 console.log("Programa finalizado")
+*/
 
+var colorOne = "green";
+var colorTwo = "yellow";
+
+if (colorOne == "green" || colorTwo == "yellow"){
+	console.log("Maybe this is a Brazil flag")
+}else{
+	console.log("This is another flag")
+}
 
 
