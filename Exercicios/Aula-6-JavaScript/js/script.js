@@ -114,18 +114,57 @@ nomeFuncao();
 // 	}
 // }
 
-//
-/*function a(callback){
-		console.log('a vem primeiro');
-	setTimeout(function(){
-		callback();
-	}, 3000);
-}
+/*-----------------------------------*/
 
-function b() {
-	console.log("b vem depois");
-}
-a(b);*/
-//
+// function a(callback){
+// 		console.log('a vem primeiro');
+// 	setTimeout(function(){
+// 		callback();
+// 	}, 3000);
+// }
+/*-----------------------------------
+
+// function b() {
+// 	console.log("b vem depois");
+// }
+// a(b);*/
+
+/*-----------------------------------*/
 
 //
+// var numeros = [1,2,3,4,5];
+
+// numeros.forEach(function(value, index){
+// 	console.log("No indice: " + index + " tem o valor: " + value);
+// 	console.log(index+" = "+value)
+// });
+/*-----------------------------------*/
+// var numeros = [1,2,3,4,5];
+
+// let nums = numeros.map(function(numero){
+// 	return numero * 2;
+// });
+// console.log(nums);
+/*-----------------------------------*/
+
+// let array = [10,20,30];
+
+// let numeros = array.filter(function(numero){
+// 	return numero >= 18;
+// });
+
+// console.log(numeros);
+
+/*-----------------------------------*/
+
+// let array = [10,20,30];
+
+// let numeros = array.reduce(function(a, b){
+// 	return a * b;
+// });
+
+// console.log(numeros);
+
+/*-----------------------------------*/
+
+
