@@ -11,4 +11,11 @@ for (var i = 0; i < entradas.length; i++) {
 	entradas[i].style.backgroundColor = "red";
 }
 
-// 
+// SELETORES E ATRIBUTOS
+
+
+// Exercicio 1
+document.getElementById('copyright');
+console.log(copyright.attributes);
+
+//
