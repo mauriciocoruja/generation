@@ -23,4 +23,8 @@ let tt = document.querySelector(".fa-twitter");
 tt.getAttribute('href');
 console.log(tt);
 
-//
+// Exerrcicio 3
+
+let fb = document.querySelector(".fa-facebook");
+fb.getAttribute('href');
+console.log(fb);
