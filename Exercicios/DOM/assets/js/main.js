@@ -15,8 +15,7 @@ for (var i = 0; i < entradas.length; i++) {
 
 
 // Exercicio 1
-document.getElementById('copyright');
-console.log(copyright.attributes);
+console.log(document.getElementById('copyright').attributes);
 
 // Exercicio 2
 let tt = document.querySelector(".fa-twitter");
@@ -33,3 +32,7 @@ console.log(fb);
 let yt = document.querySelector(".fa-youtube");
 yt.setAttribute('href','https://youtube.com/channel/UCRQdwmWMhTcqDFjPT4UPZYA');
 yt.setAttribute('target','_blank');
+
+
+
+
