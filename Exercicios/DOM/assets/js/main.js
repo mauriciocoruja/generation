@@ -23,8 +23,13 @@ let tt = document.querySelector(".fa-twitter");
 tt.getAttribute('href');
 console.log(tt);
 
-// Exerrcicio 3
+// Exercicio 3
 
 let fb = document.querySelector(".fa-facebook");
 fb.getAttribute('href');
 console.log(fb);
+
+// Exercicio 4
+let yt = document.querySelector(".fa-youtube");
+yt.setAttribute('href','https://youtube.com/channel/UCRQdwmWMhTcqDFjPT4UPZYA');
+yt.setAttribute('target','_blank');
