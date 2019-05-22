@@ -33,6 +33,8 @@ let yt = document.querySelector(".fa-youtube");
 yt.setAttribute('href','https://youtube.com/channel/UCRQdwmWMhTcqDFjPT4UPZYA');
 yt.setAttribute('target','_blank');
 
+// Exercicio 5
 
+console.log(document.querySelector('form').hasAttribute('action'))
 
 
