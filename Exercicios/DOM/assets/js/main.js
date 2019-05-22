@@ -35,6 +35,32 @@ yt.setAttribute('target','_blank');
 
 // Exercicio 5
 
-console.log(document.querySelector('form').hasAttribute('action'))
+console.log(document.querySelector('form').hasAttribute('action'));
 
+// Exericio 6
 
+// let formulario = querySelector(".formulario");
+// formulario.setAttribute("action", formulario.getAttribute("url"));
+// formulario.removeAttribute("url");
+
+// function rename (){
+
+// }
+
+// Exercicio 7 
+document.querySelectorAll("h2").forEach(function(h2){
+	h2.style.color = "red";
+});
+
+// Exercicio 8 
+document.querySelectorAll(".icon").forEach(function(icon){
+	icon.style.backgroundColor = "white";
+});
+
+// 
+
+document.querySelector('#lechuza').addEventListener("click",function(){
+	alert("Ai, você clicou em mim!");
+})
+
+// 
