@@ -6,3 +6,11 @@ btnOla.onclick = function() {
 }
 */
 
+// Exercicio 2
+/*
+document.getElementById("corVerde");
+corVerde.onclick = function(){
+    document.querySelector('body').style.backgroundColor = 'green';
+};
+*/
+
