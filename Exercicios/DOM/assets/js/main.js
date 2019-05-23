@@ -59,11 +59,9 @@ document.querySelectorAll("h2").forEach(function(h2){
 document.querySelectorAll(".icon").forEach(function(icon){
 	icon.style.backgroundColor = "white";
 });
-
-// 
-
-document.querySelector('#lechuza').addEventListener("click",function(){
-	alert("Ai, você clicou em mim!");
-})
+		// Mais uma aplicação para treinar o exercicio
+		document.querySelector(".icon").forEach(function(icon){
+			icon.style.borderColor = "pink";
+		});
 
 /////
