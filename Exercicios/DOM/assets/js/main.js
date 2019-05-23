@@ -1,3 +1,5 @@
+// SELETORES
+
 // Exercicio 1
 document.getElementById('cabecalho').style.display = "none";
 
@@ -39,13 +41,14 @@ console.log(document.querySelector('form').hasAttribute('action'));
 
 // Exericio 6
 
-// let formulario = querySelector(".formulario");
-// formulario.setAttribute("action", formulario.getAttribute("url"));
-// formulario.removeAttribute("url");
+let formulario = document.querySelector(".formulario");
+formulario.setAttribute("action", formulario.getAttribute("url"));
+formulario.removeAttribute("url");
 
-// function rename (){
-
-// }
+		// Mais uma aplicação para treinar o exercicio
+		let coruja = document.querySelector("#lechuza");
+		coruja.setAttribute("src", coruja.getAttribute("url"));
+		coruja.removeAttribute("url");
 
 // Exercicio 7 
 document.querySelectorAll("h2").forEach(function(h2){
@@ -63,4 +66,4 @@ document.querySelector('#lechuza').addEventListener("click",function(){
 	alert("Ai, você clicou em mim!");
 })
 
-// 
+/////
