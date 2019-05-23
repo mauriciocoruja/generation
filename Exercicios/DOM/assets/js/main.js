@@ -1,3 +1,5 @@
+// SELETORES
+
 // Exercicio 1
 document.getElementById('cabecalho').style.display = "none";
 
@@ -39,13 +41,14 @@ console.log(document.querySelector('form').hasAttribute('action'));
 
 // Exericio 6
 
-// let formulario = querySelector(".formulario");
-// formulario.setAttribute("action", formulario.getAttribute("url"));
-// formulario.removeAttribute("url");
+let formulario = document.querySelector(".formulario");
+formulario.setAttribute("action", formulario.getAttribute("url"));
+formulario.removeAttribute("url");
 
-// function rename (){
-
-// }
+		// Mais uma aplicação para treinar o exercicio
+		let coruja = document.querySelector("#lechuza");
+		coruja.setAttribute("src", coruja.getAttribute("url"));
+		coruja.removeAttribute("url");
 
 // Exercicio 7 
 document.querySelectorAll("h2").forEach(function(h2){
@@ -56,11 +59,21 @@ document.querySelectorAll("h2").forEach(function(h2){
 document.querySelectorAll(".icon").forEach(function(icon){
 	icon.style.backgroundColor = "white";
 });
+		// Mais uma aplicação para treinar o exercicio
+		document.querySelectorAll("a").forEach(function(a){
+			a.style.color = "green";
+		});
 
-// 
+// ELEMENTOS 
 
-document.querySelector('#lechuza').addEventListener("click",function(){
-	alert("Ai, você clicou em mim!");
-})
+//Exercicio 1
 
-// 
+document.querySelector("#top").textContent = "Topo";
+document.querySelector("#work").textContent = "Trabalho";
+document.querySelector("#portfolio").textContent = "Portifólio";
+document.querySelector("#contact").textContent = "Contato";
+
+//Exercicio 2
+
+let pai = document.querySelector(".social");
+pai.removeChild(pai.children.item(3));
