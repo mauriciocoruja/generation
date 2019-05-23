@@ -60,8 +60,22 @@ document.querySelectorAll(".icon").forEach(function(icon){
 	icon.style.backgroundColor = "white";
 });
 		// Mais uma aplicação para treinar o exercicio
-		document.querySelector(".icon").forEach(function(icon){
-			icon.style.borderColor = "pink";
+		document.querySelectorAll("a").forEach(function(a){
+			a.style.color = "green";
 		});
 
-/////
+// ELEMENTOS 
+
+//Exercicio 1
+
+document.querySelector("#top").textContent = "Topo";
+document.querySelector("#work").textContent = "Trabalho";
+document.querySelector("#portfolio").textContent = "Portifólio";
+document.querySelector("#contact").textContent = "Contato";
+
+//Exercicio 2
+
+let pai = document.querySelector(".social");
+pai.removeChild(pai.children.item(3));
+
+
