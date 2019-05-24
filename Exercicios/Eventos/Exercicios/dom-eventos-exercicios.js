@@ -25,24 +25,40 @@ document.querySelector("#img2").addEventListener("click", function() {
 });
 
 // Exercicio 6
-let corpo = document
-  .querySelector("body")
-  .addEventListener("click", function() {
+/*
+let corpo = document.querySelector("body").addEventListener("click", function() {
     return this;
   });
 
 this.addEventListener("click", function() {
   document.querySelector("#body").style.backgroundColor = "red";
 });
+*/
 
 // Exercicio 7
 
-let corpo = document
-  .querySelector("body")
-  .addEventListener("click", function() {
+let corpo = document.querySelector("body").addEventListener("click", function() {
     return this;
   });
 
 this.removeEventListener("click", function() {
   document.querySelector("#body").style.backgroundColor = "red";
 });
+
+// Exercicio 8
+
+document.querySelector("form").addEventListener("click", function(event) {
+  event.preventDefault();
+  alert("Não é possível enviar");
+  // o link não vai mais para o Google
+});
+
+// let enviar = document.getElementById("enviar").addEventListener("click", function(event){
+//     event.preventDefault();
+//     alert("Não é possível enviar");
+// });
+
+
+
+
+
