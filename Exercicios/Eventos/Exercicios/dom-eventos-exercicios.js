@@ -37,7 +37,9 @@ this.addEventListener("click", function() {
 
 // Exercicio 7
 
-let corpo = document.querySelector("body").addEventListener("click", function() {
+let corpo = document
+  .querySelector("body")
+  .addEventListener("click", function() {
     return this;
   });
 
@@ -58,7 +60,19 @@ document.querySelector("form").addEventListener("click", function(event) {
 //     alert("Não é possível enviar");
 // });
 
+// Exercicio 9
+document.querySelector("#img1").addEventListener("click", function(event) {
+  console.log("Estou vendo a imagem");
+  console.log(event.clientX);
+  console.log(event.clientY);
+});
 
+// Timers
 
+setTimeout(function() {
+  alert("Tempo esgotado");
+}, 10000);
 
-
+setInterval(function() {
+  alert("Hora do intervalo");
+}, 5000);
