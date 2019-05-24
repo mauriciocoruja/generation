@@ -7,11 +7,18 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
-      <label for="nome" id="name">Nome</label><br/>
-      <input type="text" name="nome"/><br>
-      <label for="email" >E-mail</label><br/>
-      <input type="text" />
+    <form name="formulario" method="POST" action="#">
+      <label for="nome" name="nome" id="nome">Nome</label><br />
+      <input type="text" name="nome" id="nome" /><br />
+
+      <label for="email" name="email" id="email">E-mail</label><br />
+      <input type="text" name="email" id="email" /><br/>
+      <label for="senhaUm">Senha</label><br>
+      <input type="password" name="senhaUm" /><br>
+      <label for="senhaDois">confirma senha</label><br>
+      <input type="password" name="senhaDois" /><br>
+      <button type="submit">enviar</button>
     </form>
+    <script src="eventos-formularios.js"></script>
   </body>
 </html>
