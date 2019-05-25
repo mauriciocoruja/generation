@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1" onsubmit="function getFormValue()">
+        First name
+        <input type="text" name="nome" id="nome" value="Neymar">
+        Last Name
+        <input type="text" name="sobrenome" value="Jr">
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+
+
+        
+        let formulario = document.querySelector('form');
+            let nomeDoCara = formulario.nome.value
+            let sobrenomeDoCara = formulario.sobrenome.value
+            let nomeCompleto = function getFormValue(){
+                return nomeDoCara+" "+sobrenomeDoCara;
+            }
+
+        
+    </script>
+</body>
+</html>
