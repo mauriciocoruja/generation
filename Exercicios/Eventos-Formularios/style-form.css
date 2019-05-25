@@ -50,7 +50,7 @@ div.getStarted{
 }
 
 input,
-.formulario {
+form.formulario {
 	background-color: rgb(36, 50, 60);
 }
 
@@ -65,7 +65,7 @@ input {
 	border: 1px solid rgb(83, 96, 105);
 }
 
-.formulario {
+form.formulario {
 	width: 400px;
 	height: 100%;
 	padding: 10px;
