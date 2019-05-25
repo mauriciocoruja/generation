@@ -1,10 +1,11 @@
 // Exercicio 1
 
-function comparaSenha(senhaUm, senhadois) {
-  return senhaUm !== senhadois;
+function comparaSenha(a, b) {
+  return a !== b;
 }
 
 let formulario = document.querySelector("form");
+
 
 formulario.onsubmit = function() {
   if (formulario.nome.value == "") {
@@ -17,14 +18,18 @@ formulario.onsubmit = function() {
     formulario.email.focus();
     return false;
   }
-  if (comparaSenha(formulario.senhaUm.value, formulario.senhaDois.value)) {
+
+  let senhaUm = formulario.senhaUm.value;
+  let senhaDois = formulario.senhaDois.value;
+  
+  if (comparaSenha(senhaUm, senhaDois)) {
     alert("As senhas não coincidem");
-    formulario.senha.focus();
+    formulario.senhaUm.focus();
     return false;
   }
-  if (formulario.senhaUm.value == "" && formulario.senhaDois.value == "") {
+  if (senhaUm == "" && senhaDois == "") {
     alert("Digite a senha");
-    formulario.senha.focus();
+    formulario.senhaDois.focus();
     return false;
   }
 };
