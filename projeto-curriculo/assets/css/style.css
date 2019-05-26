@@ -1,0 +1,22 @@
+.seletor-para-algum-widget {
+    box-sizing: content-box;
+}
+li{
+    list-style: none;
+}
+p{
+    text-align: justify;
+}
+.container{
+    width: 1000px;
+}
+.cargo{
+    font-weight: 700
+}
+.empresa {
+    font-weight: 500
+}
+.periodo{
+    font-weight: 300;
+    color: #7b7b7b
+}
