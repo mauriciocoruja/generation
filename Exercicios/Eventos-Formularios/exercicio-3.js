@@ -4,7 +4,7 @@ function comparaSenha(a, b) {
   return a !== b;
 }
 
-formulario.onsubmit = function() {
+formulario.onsubmit = function () {
   if (formulario.firstName.value == "") {
     alert("Você esqueceu de escrever seu nome");
     formulario.firstName.focus();
@@ -23,7 +23,7 @@ formulario.onsubmit = function() {
 
   let passwordOne = formulario.passwordOne.value;
   let passwordTwo = formulario.passwordTwo.value;
-   
+
   if (comparaSenha(passwordOne, passwordTwo)) {
     alert("As senhas não coincidem");
     formulario.passwordOne.focus();
@@ -35,3 +35,17 @@ formulario.onsubmit = function() {
     return false;
   }
 }
+
+
+let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value]
+
+
+document.querySelector('.showinfos').onclick = function mostrarDados() {
+  for (i = 0; i < dados.length; i++) {
+    let li = document.createElement('li');
+
+    document.getElementById("minhaLista").appendChild(li).innerHTML = dados[i]
+  }
+}
+  // document.getElementById("minhaLista").appendChild(li).textContent = formulario.lastName.value;
+  // document.getElementById("minhaLista").appendChild(li).textContent = formulario.emailAdress.value;

@@ -4,7 +4,8 @@
 button{
 	border: none;
 }
-button.logIn {
+button.logIn,
+.reset {
 	background-color: rgb(67, 82, 89);
 	color: #fff;
 	float: right;
@@ -32,17 +33,17 @@ button.getStarted:active,
 .email,
 .password,
 .nomeCompleto,
-button.getStarted,
+button.getStarted,.showinfos,
 div.getStarted{
 	width: 380px;
 }
 
-.topButtons {
+.bottomButtons,.topButtons {
 	margin: 0 auto;
 	padding: 10px;
 }
 
-.topButtons button {
+.bottomButtons button,.topButtons button {
 	width: 190px;
 	height: 40px;
 	font-size: 14px;
