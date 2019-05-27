@@ -36,14 +36,16 @@ formulario.onsubmit = function () {
   }
 }
 
-
 document.querySelector('.showinfos').onclick = function mostrarDados() {
   let formulario = document.querySelector("form");
   let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value];
   
+  let ul = document.createElement('ul');
+  document.querySelector('body').appendChild(ul);
+
  for (i = 0; i < dados.length; i++) {
     let li = document.createElement('li');
-    document.getElementById("minhaLista").appendChild(li).innerHTML = dados[i];
-    formulario.style.display = "none"
+    document.querySelector('ul').appendChild(li).innerHTML = dados[i];
+    formulario.style.display = 'none';
   }
 }
