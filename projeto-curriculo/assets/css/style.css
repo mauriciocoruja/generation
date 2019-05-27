@@ -9,6 +9,7 @@ p{
 }
 .container{
     max-width: 1000px;
+    /* margin-top: 80px; */
 }
 .cargo{
     font-weight: 700
@@ -20,4 +21,9 @@ p{
     font-weight: 300;
     color: #7b7b7b;
 }
+.navbar-inner {
+    background:transparent;
+}
+
+
 
