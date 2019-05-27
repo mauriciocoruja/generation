@@ -37,15 +37,13 @@ formulario.onsubmit = function () {
 }
 
 
-let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value]
-
-
 document.querySelector('.showinfos').onclick = function mostrarDados() {
-  for (i = 0; i < dados.length; i++) {
+  let formulario = document.querySelector("form");
+  let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value];
+  
+ for (i = 0; i < dados.length; i++) {
     let li = document.createElement('li');
-
-    document.getElementById("minhaLista").appendChild(li).innerHTML = dados[i]
+    document.getElementById("minhaLista").appendChild(li).innerHTML = dados[i];
+    formulario.style.display = "none"
   }
 }
-  // document.getElementById("minhaLista").appendChild(li).textContent = formulario.lastName.value;
-  // document.getElementById("minhaLista").appendChild(li).textContent = formulario.emailAdress.value;
