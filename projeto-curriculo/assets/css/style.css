@@ -1,29 +1,50 @@
 .seletor-para-algum-widget {
     box-sizing: content-box;
 }
-li{
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+li {
     list-style: none;
 }
-p{
+
+p {
     text-align: justify;
 }
-.container{
+
+.container {
     max-width: 1000px;
-    /* margin-top: 80px; */
+    margin-top: 40px;
 }
-.cargo{
+
+.cargo {
     font-weight: 700
 }
+
 .empresa {
     font-weight: 500
 }
-.periodo{
+
+.periodo {
     font-weight: 300;
     color: #7b7b7b;
 }
+
 .navbar-inner {
-    background:transparent;
+    background: transparent;
 }
 
-
-
+#cursos,
+#experiencia,
+#formacao,
+#sobremim {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -50px;
+    /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    background-color: transparent;
+    z-index: -1;
+}
