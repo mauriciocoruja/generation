@@ -36,16 +36,32 @@ formulario.onsubmit = function () {
   }
 }
 
-document.querySelector('.showinfos').onclick = function mostrarDados() {
-  let formulario = document.querySelector("form");
-  let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value];
+// document.querySelector('.showinfos').onclick = function mostrarDados() {
+//   let formulario = document.querySelector("form");
+//   let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value];
   
-  let ul = document.createElement('ul');
-  document.querySelector('body').appendChild(ul);
+//   let ul = document.createElement('ul');
+//   document.querySelector('body').appendChild(ul);
 
- for (i = 0; i < dados.length; i++) {
+//  for (i = 0; i < dados.length; i++) {
+//     let li = document.createElement('li');
+//     ul.appendChild(li).innerHTML = dados[i];
+//   }
+//   formulario.style.display = 'none';
+// }
+
+document.querySelector('.showinfos').onclick = () => {
+
+  let formulario = document.querySelector("form");
+
+  let ul = document.createElement('ul');
+  let dados = [formulario.firstName.value, formulario.lastName.value, formulario.emailAdress.value];
+
+  dados.forEach((dado) => {
     let li = document.createElement('li');
-    document.querySelector('ul').appendChild(li).innerHTML = dados[i];
-    formulario.style.display = 'none';
-  }
+    ul.appendChild(li).innerHTML = dado;
+  });
+
+  document.querySelector('body').appendChild(ul);
+  formulario.style.display = 'none';
 }
