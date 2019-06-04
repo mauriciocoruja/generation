@@ -34,7 +34,7 @@ public class Conta {
     }
 
     public void deposito(double valorIn) {
-        this.saldo = valorIn + this.saldo;
+        this.saldo += valorIn;
         System.out.println("Seu saldo após o depósito é de R$"+this.saldo);
     }
 
@@ -44,7 +44,7 @@ public class Conta {
             System.out.println("Ta sem grana, meu parceiro");
         }else {
             System.out.println("Boy! Você ainda tem " + this.saldo);
-            this.saldo = this.saldo - valorOut;
+            this.saldo -= valorOut;
             System.out.println("Seu saldo após o saque é de R$"+this.saldo);
         }
     }
