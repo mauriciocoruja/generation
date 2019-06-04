@@ -53,6 +53,7 @@ public class Tripe {
 
     public boolean desdobrar(){
         return dobrado = true;
+        //tira do estado dobrado e coloca no estado desdobrado
     }
 
     public boolean guardar(){

@@ -15,8 +15,8 @@
       <file leaf-file-name="Tripe.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tripe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="e#180#181#0" expanded="true" />
                 <element signature="e#210#211#0" expanded="true" />
@@ -38,8 +38,6 @@
                 <element signature="e#1165#1166#0" expanded="true" />
                 <element signature="e#1198#1199#0" expanded="true" />
                 <element signature="e#1236#1237#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -433,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tripe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#180#181#0" expanded="true" />
             <element signature="e#210#211#0" expanded="true" />
@@ -456,8 +454,6 @@
             <element signature="e#1165#1166#0" expanded="true" />
             <element signature="e#1198#1199#0" expanded="true" />
             <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
           </folding>
         </state>
       </provider>
