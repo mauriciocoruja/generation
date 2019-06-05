@@ -59,28 +59,35 @@ public class Tripe {
     public boolean guardar(){
         if ((dobrado)&&(alturaAtual <= alturaMinima)){
             // pronto para guardar
+            System.out.println("Hora de guardar");
         }
         return true;
     }
 
     public void prontoParaGuardar(){
         if (guardar()){
+            System.out.println("Está pronto para guardar");
             //está pronto para guardar
         }else {
+            System.out.println("Ainda não está pronto para guardar");
             //ainda não está pronto para guardar
         }
     }
 
-    public void usar(){
+    public boolean usar(){
         if((!desdobrar()) && (alturaAtual > (alturaMaxima/2))){
-            //Pronto para guardar
+            System.out.println("Está pronto para usar");
+            //Pronto para usar
         }else {
+            System.out.println("Não está pronto para usar");
             //não está pronto para usar
         }
+        return true;
     }
 
     public void prontoParaUsar(){
-        if ((desdobrar()) && ((alturaAtual > (alturaMaxima/2)))){
+        if (usar() && alturaAtual > (alturaMaxima/2)){
+            System.out.println("Está pronto para usar");
             //Está pronto para usar
         }
     }
