@@ -33,11 +33,13 @@ public class Prova {
         this.nome = nome;
     }
 
-    public void podeRealizar(Atleta x){
+    public boolean podeRealizar(Atleta x){
         if ((x.getEnergia()>= energiaNecessaria )&&(x.getNível()>= dificuldade)){
             System.out.println(x.getNome()+" pode realizar com o treino " + nome + " com tranquilidade");
+            return true;
         }else{
             System.out.println(x.getNome()+" Não pode realizar esse treino");
+            return false;
         }
     }
 }

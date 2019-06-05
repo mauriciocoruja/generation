@@ -44,38 +44,52 @@ public class Tripe {
     }
 
     public void definirAltura(Integer novaAltura){
-        alturaAtual = novaAltura;
+        this.alturaAtual = novaAltura;
     }
 
     public boolean dobrar(){
-        return dobrado = false;
+        if(dobrado){
+            System.out.println("Sim, está dobrado");
+            return true;
+        }else{
+            System.out.println("Não está dobrado");
+            return false;
+        }
+//        this.dobrado = true;
+//        System.out.println("Sim, está dobrado");
+//        return true;
     }
 
     public boolean desdobrar(){
-        return dobrado = true;
+        this.dobrado = false;
+        System.out.println("Agora está desdobrado");
+        return false;
         //tira do estado dobrado e coloca no estado desdobrado
     }
 
     public boolean guardar(){
-        if ((dobrado)&&(alturaAtual <= alturaMinima)){
+        if ((this.dobrado)&&(alturaAtual == alturaMinima)){
             // pronto para guardar
             System.out.println("Hora de guardar");
+            return true;
+        }else {
+            System.out.println("Tente dobrar antes de guardar");
+            return false;
         }
-        return true;
     }
 
     public void prontoParaGuardar(){
         if (guardar()){
             System.out.println("Está pronto para guardar");
             //está pronto para guardar
-        }else {
+        }else{
             System.out.println("Ainda não está pronto para guardar");
             //ainda não está pronto para guardar
         }
     }
 
     public boolean usar(){
-        if((!desdobrar()) && (alturaAtual > (alturaMaxima/2))){
+        if((dobrar()) && (alturaAtual > (alturaMaxima/2))){
             System.out.println("Está pronto para usar");
             //Pronto para usar
         }else {

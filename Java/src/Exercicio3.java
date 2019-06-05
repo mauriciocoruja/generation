@@ -11,6 +11,7 @@ public class Exercicio3 {
         provaDois.podeRealizar(bolt);
         provaTres.podeRealizar(bolt);
 
+        System.out.println("------------------------------------------------");
 
         provaUm.podeRealizar(serena);
         provaDois.podeRealizar(serena);
