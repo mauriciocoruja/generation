@@ -1,8 +1,6 @@
 public class ContaPoupanca extends Conta {
     private double taxaDeJuros;
 
-
-
     public double getTaxaDeJuros() {
         return taxaDeJuros;
     }
@@ -20,17 +18,8 @@ public class ContaPoupanca extends Conta {
     }
 
     @Override
-    public void depositar(double valor) {
-
-    }
-
-    @Override
-    public void consultar() {
-
-    }
-
-    @Override
-    public void sacar() {
-
+    public double sacar(double valor) {
+        this.saldo -= valor;
+        return this.saldo;
     }
 }

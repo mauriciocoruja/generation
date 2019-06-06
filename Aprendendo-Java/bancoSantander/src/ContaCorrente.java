@@ -1,6 +1,7 @@
 public class ContaCorrente extends Conta {
 
     private double chequeEspecial;
+    private double limite;
 
 
     public double getChequeEspecial() {
@@ -20,25 +21,21 @@ public class ContaCorrente extends Conta {
         this.chequeEspecial = chequeEspecial;
     }
 
+    @Override
+    public double sacar(double valor) {
+        this.limite = this.saldo + this.chequeEspecial;
+        if(valor <= limite){
+            this.limite -= valor;
+        }
+        return this.saldo;
+    }
+
     public ContaCorrente() {
     }
 
-    @Override
-    public void depositar(double valor) {
-        this.saldo = saldo + valor;
-        System.out.println("Seu saldo após o depósito é R$"+this.saldo);
-    }
-
-    @Override
-    public void consultar() {
-
-    }
-
-    @Override
-    public void sacar() {
-
-    }
-    public void depositarCheque() {
+    public double depositarCheque(double valor) {
+        this.saldo += valor;
+        return this.saldo;
 
     }
 }

@@ -2,9 +2,13 @@ public abstract class Conta {
     protected double saldo;
     protected Cliente cliente;
 
-    public abstract void depositar(double valor);
-    public abstract void consultar();
-    public abstract void sacar();
+    public void depositar(double valor){
+        this.saldo = saldo + valor;
+    }
+    public double consultar(){
+        return this.saldo;
+    }
+    public abstract double sacar(double valor);
 
 
     public double getSaldo() {
