@@ -1,4 +1,4 @@
-public class ContaCorrente extends Contas {
+public class ContaCorrente extends Conta {
 
     private double chequeEspecial;
 
@@ -15,9 +15,18 @@ public class ContaCorrente extends Contas {
         this.chequeEspecial = chequeEspecial;
     }
 
-    @Override
-    public void depositar() {
+    public ContaCorrente(double saldo,Cliente cliente, double chequeEspecial) {
+        super(saldo, cliente);
+        this.chequeEspecial = chequeEspecial;
+    }
 
+    public ContaCorrente() {
+    }
+
+    @Override
+    public void depositar(double valor) {
+        this.saldo = saldo + valor;
+        System.out.println("Seu saldo após o depósito é R$"+this.saldo);
     }
 
     @Override
@@ -27,6 +36,9 @@ public class ContaCorrente extends Contas {
 
     @Override
     public void sacar() {
+
+    }
+    public void depositarCheque() {
 
     }
 }

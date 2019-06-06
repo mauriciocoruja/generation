@@ -1,5 +1,7 @@
-public class ContaPoupanca extends Contas{
+public class ContaPoupanca extends Conta {
     private double taxaDeJuros;
+
+
 
     public double getTaxaDeJuros() {
         return taxaDeJuros;
@@ -18,7 +20,7 @@ public class ContaPoupanca extends Contas{
     }
 
     @Override
-    public void depositar() {
+    public void depositar(double valor) {
 
     }
 
