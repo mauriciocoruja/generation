@@ -10,8 +10,8 @@ public class Main {
         System.out.println("Seu saldo atual após o deposito é R$"+contaCorrente.consultar());
         contaCorrente.sacar(1500);
         System.out.println("Seu saldo atual após o saque é R$"+contaCorrente.consultar());
-        contaCorrente.depositarCheque(0);
-        System.out.println("Seu saldo atual após deposito do cheque é R$"+contaCorrente.consultar());
+//        contaCorrente.depositarCheque(0);
+//        System.out.println("Seu saldo atual após deposito do cheque é R$"+contaCorrente.consultar());
     }
 
 }

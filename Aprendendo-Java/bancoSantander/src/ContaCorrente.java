@@ -1,8 +1,6 @@
 public class ContaCorrente extends Conta {
 
     private double chequeEspecial;
-    private double limite;
-
 
     public double getChequeEspecial() {
         return chequeEspecial;
@@ -23,9 +21,11 @@ public class ContaCorrente extends Conta {
 
     @Override
     public double sacar(double valor) {
-        this.limite = this.saldo + this.chequeEspecial;
-        if(valor <= limite){
-            this.limite -= valor;
+        this.saldo = this.saldo + this.chequeEspecial;
+        if(valor <= saldo || valor <= (this.saldo + this.chequeEspecial)){
+            this.saldo -= valor;
+        } else {
+            return this.saldo;
         }
         return this.saldo;
     }
