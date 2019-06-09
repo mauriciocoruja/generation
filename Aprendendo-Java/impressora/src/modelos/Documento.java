@@ -1,4 +1,4 @@
 package modelos;
 
-public class Documento {
+public class Documento implements Imprimivel {
 }
