@@ -21,7 +21,8 @@ public class ContaCorrente extends Conta {
 
     @Override
     public double sacar(double valor) {
-        this.saldo = this.saldo + this.chequeEspecial;
+        System.out.println("Valor do saque: R$"+valor);
+        this.saldo += this.chequeEspecial;
         if(valor <= saldo || valor <= (this.saldo + this.chequeEspecial)){
             this.saldo -= valor;
         } else {
@@ -34,6 +35,7 @@ public class ContaCorrente extends Conta {
     }
 
     public double depositarCheque(double valor) {
+        System.out.println("Valor do Cheque: R$"+valor);
         this.saldo += valor;
         return this.saldo;
 
