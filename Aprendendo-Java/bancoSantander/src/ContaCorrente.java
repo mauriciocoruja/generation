@@ -38,6 +38,11 @@ public class ContaCorrente extends Conta {
         System.out.println("Valor do Cheque: R$"+valor);
         this.saldo += valor;
         return this.saldo;
+    }
 
+    @Override
+    public double consultar(){
+        System.out.println("Saldo: R$"+this.saldo+" (Cheque especial: R$"+this.chequeEspecial+")");
+        return this.saldo;
     }
 }

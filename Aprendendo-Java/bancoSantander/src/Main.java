@@ -5,6 +5,7 @@ public class Main {
         ContaCorrente contaCorrente = new ContaCorrente(500,mauricio,500);
         Cheque cheque = new Cheque(0,"BB","2019-06-06");
 
+        System.out.println("\n--------------------Conta Corrente--------------------\n");
         System.out.println("Seu saldo inicial é R$" + contaCorrente.consultar());
 
         contaCorrente.depositar(500);
@@ -26,6 +27,19 @@ public class Main {
         }else {
             System.out.println("Valor de saque maior que o saldo: " + contaCorrente.consultar());
         }
+
+        System.out.println("\n--------------------Conta Poupança--------------------\n");
+
+        ContaPoupanca contaPoupanca = new ContaPoupanca(200,mauricio,0.5);
+
+        contaPoupanca.depositar(800);
+        System.out.println("Seu saldo após o depósito R$"+contaPoupanca.consultar());
+
+        System.out.println("Valor acumulado com juros R$"+contaPoupanca.calculoTaxaJuros());
+
+        contaPoupanca.sacarJuros();
+        System.out.println("Seu saldo após o saque R$"+contaPoupanca.consultar());
+
     }
 
 }
