@@ -38,6 +38,9 @@ public class Main {
         System.out.println("Valor acumulado com juros R$"+contaPoupanca.calculoTaxaJuros());
 
         contaPoupanca.sacarJuros();
+        System.out.println("Seu saldo após o saque dos juros R$"+contaPoupanca.consultar());
+
+        contaPoupanca.sacar(1000);
         System.out.println("Seu saldo após o saque R$"+contaPoupanca.consultar());
 
     }
