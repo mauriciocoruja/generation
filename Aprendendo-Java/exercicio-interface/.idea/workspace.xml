@@ -2,27 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4db1417-ba5d-4e81-901b-6ba48b4c89cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercicio-interface-impressora.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/modelos/Contrato.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/modelos/Documento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/modelos/Foto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/modelos/Impressora.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/impressora/modelos/Imprimivel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Contrato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Documento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Foto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Impressora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Imprimivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../impressora/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/exercicio-interface-impressora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/modelos/Contrato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/modelos/Documento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/modelos/Foto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/modelos/Impressora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/out/production/impressora/modelos/Imprimivel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/modelos/Contrato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/modelos/Documento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/modelos/Foto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/modelos/Impressora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../impressora/src/modelos/Imprimivel.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
@@ -73,14 +72,15 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,53 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="exercicio-interface-impressora" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="exercicio-interface-impressora" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -168,74 +121,55 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560095754792</updated>
-      <workItem from="1560095760096" duration="6015000" />
+      <workItem from="1560095760096" duration="5814000" />
+      <workItem from="1560103549774" duration="137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6015000" />
+    <option name="totallyTimeSpent" value="5951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="1413" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1631664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16558966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.329296" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329296" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329296" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modelos/Imprimivel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modelos/Contrato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="504">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#143#144#0" expanded="true" />
@@ -246,15 +180,13 @@
             <element signature="e#300#301#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modelos/Foto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
+        <state relative-caret-position="672">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="e#139#140#0" expanded="true" />
@@ -265,15 +197,13 @@
             <element signature="e#296#297#0" expanded="true" />
             <element signature="e#336#337#0" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modelos/Documento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="696">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="e#145#146#0" expanded="true" />
@@ -284,8 +214,6 @@
             <element signature="e#302#303#0" expanded="true" />
             <element signature="e#342#343#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -294,6 +222,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Imprimivel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding>
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
