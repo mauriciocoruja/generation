@@ -3,7 +3,7 @@ package exercicio1;
 import java.util.HashMap;
 import java.util.Map;
 
-public class exercicio1a {
+public class exercicio1 {
 
     public static void main(String[] args) {
 
