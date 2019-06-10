@@ -35,6 +35,6 @@ public class ContaPoupanca extends Conta {
     }
 
     public double sacarJuros (){
-        return this.saldo - this.saldo * this.taxaDeJuros;
+        return (this.saldo - this.saldo) * this.taxaDeJuros;
     }
 }
