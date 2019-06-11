@@ -6,13 +6,19 @@ import java.util.List;
 public class exercicio1 {
     public static void main(String[] args) {
 
-        List<String> animais = new ArrayList<>();
+        try{
+            List<String> animais = new ArrayList<>();
 
-        animais.add("Pato");
-        animais.add("Cachorro");
-        animais.add("Gato");
+            animais.add("Pato");
+            animais.add("Cachorro");
+            animais.add("Gato");
 
-        System.out.println(animais.get(3));
+            System.out.println(animais.get(3));
+        } catch (IndexOutOfBoundsException e){
+//            e.printStackTrace(); //Usado para exibir a mensagem de erro
+            System.out.println("Caiu na excessão");
+        }
+
 
     }
 }
