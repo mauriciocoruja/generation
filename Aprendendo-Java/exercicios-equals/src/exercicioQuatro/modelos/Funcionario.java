@@ -11,6 +11,15 @@ public class Funcionario {
         this.numeroDeRegistro = numeroDeRegistro;
     }
 
+    /*
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Funcionario that = (Funcionario) o;
+        return numeroDeRegistro.equals(that.numeroDeRegistro);
+    }*/
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
