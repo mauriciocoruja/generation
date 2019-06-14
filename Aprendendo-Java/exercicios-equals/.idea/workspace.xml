@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08af1c9d-5e41-4c08-bae0-3562dcd9dad1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicioQuatro/modelos/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicioQuatro/modelos/Funcionario.java" afterDir="false" />
-    </list>
+    <list default="true" id="08af1c9d-5e41-4c08-bae0-3562dcd9dad1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+            <state relative-caret-position="504">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#187#195#0" expanded="true" />
               </folding>
@@ -213,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560103977711</updated>
       <workItem from="1560103981872" duration="6389000" />
-      <workItem from="1560297108733" duration="1677000" />
+      <workItem from="1560297108733" duration="2160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8066000" />
+    <option name="totallyTimeSpent" value="8549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1505" height="1413" extended-state="0" />
@@ -233,7 +229,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329296" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -241,7 +237,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329296" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.329296" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -343,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="504">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#187#195#0" expanded="true" />
           </folding>
