@@ -10,11 +10,11 @@ public class ExercicioQuatro {
         funcionarios.add(1,"Marcelo");
         funcionarios.add(2,"João");
         funcionarios.add(3,"Juca");
-        funcionarios.add(4,"Marcos");
+        funcionarios.add(3,"Marcos");
 
         System.out.println(funcionarios);
 
-        System.out.println(funcionarios.contains("João"));
+        System.out.println(funcionarios.contains("Marcos"));
 
 
     }

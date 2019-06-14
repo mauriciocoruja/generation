@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08af1c9d-5e41-4c08-bae0-3562dcd9dad1" name="Default Changelist" comment="" />
+    <list default="true" id="08af1c9d-5e41-4c08-bae0-3562dcd9dad1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercicios-equals/exercicioTres/ExercicioTres.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-equals/exercicioTres/ExercicioTres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercicios-equals/exercicioTres/modelos/Aluno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-equals/exercicioTres/modelos/Aluno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,27 +21,36 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="408">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="e#187#195#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercicioQuatro/modelos/Funcionario.java">
+        <entry file="file://$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="624">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,16 +76,16 @@
         <option value="$PROJECT_DIR$/src/exercicioDois/ExercicioDois.java" />
         <option value="$PROJECT_DIR$/src/exercicioDois/modelos/Coca.java" />
         <option value="$PROJECT_DIR$/src/exercicioTres/modelos/ExercicioTres.java" />
-        <option value="$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java" />
-        <option value="$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java" />
         <option value="$PROJECT_DIR$/src/exercicioQuatro/modelos/Funcionario.java" />
         <option value="$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java" />
+        <option value="$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java" />
+        <option value="$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1505" />
+    <option name="width" value="1280" />
     <option name="height" value="1413" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +95,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,14 +118,19 @@
               <item name="exercicios-equals" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercicios-equals" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exercicioQuatro" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicioTres" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercicios-equals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercicios-equals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicioTres" type="462c0819:PsiDirectoryNode" />
               <item name="modelos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,6 +183,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercicioTres" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicioTres.ExercicioTres" />
+      <module name="exercicios-equals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicioTres.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercicioUm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicioUm.ExercicioUm" />
       <module name="exercicios-equals" />
@@ -188,10 +224,12 @@
       <item itemvalue="Application.ExercicioUm" />
       <item itemvalue="Application.ExercicioDois" />
       <item itemvalue="Application.ExercicioQuatro" />
+      <item itemvalue="Application.ExercicioTres" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ExercicioQuatro" />
+        <item itemvalue="Application.ExercicioTres" />
         <item itemvalue="Application.ExercicioDois" />
         <item itemvalue="Application.ExercicioUm" />
         <item itemvalue="Application.Main" />
@@ -209,18 +247,19 @@
       <option name="presentableId" value="Default" />
       <updated>1560103977711</updated>
       <workItem from="1560103981872" duration="6389000" />
-      <workItem from="1560297108733" duration="2160000" />
+      <workItem from="1560297108733" duration="2373000" />
+      <workItem from="1560545515703" duration="3328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8549000" />
+    <option name="totallyTimeSpent" value="12090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1505" height="1413" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="1413" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21462747" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21736158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,7 +276,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.329296" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329296" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -287,17 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exercicioDois/modelos/Coca.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -305,16 +333,6 @@
           <folding>
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#897#898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -330,19 +348,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exercicioQuatro/ExercicioQuatro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercicioTres/modelos/Aluno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#187#195#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercicioTres/ExercicioTres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
