@@ -13,6 +13,10 @@ public class Exercicio3 {
         somaDeNumeros.add(6);
         somaDeNumeros.add(4);
 
+        for (Integer numeros : somaDeNumeros) {
+            System.out.println("Valor: "+numeros);
+        }
+
         Prova prova = new Prova();
 
         prova.somaTotal(somaDeNumeros);

@@ -14,6 +14,6 @@ dos valores e, no final, imprimir na tela o valor da soma total.*/
         for (Integer item : conjuntoDeInteiros){
             soma = soma + item;
         }
-        System.out.println("Soma: "+soma);
+        System.out.println("Soma dos valores: "+soma);
     }
 }
