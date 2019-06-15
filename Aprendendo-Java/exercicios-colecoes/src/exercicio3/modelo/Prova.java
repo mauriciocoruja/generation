@@ -1,4 +1,4 @@
-package exercicio3;
+package exercicio3.modelo;
 
 import java.util.Set;
 
@@ -16,5 +16,4 @@ dos valores e, no final, imprimir na tela o valor da soma total.*/
         }
         System.out.println("Soma: "+soma);
     }
-
 }
