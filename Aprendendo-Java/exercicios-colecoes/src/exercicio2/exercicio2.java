@@ -2,7 +2,7 @@ package exercicio2;
 
 import java.util.*;
 
-public class exercicio3 {
+public class exercicio2 {
     public static void main(String[] args) {
 
     /*Definir e inicializar uma nova lista vazia.
