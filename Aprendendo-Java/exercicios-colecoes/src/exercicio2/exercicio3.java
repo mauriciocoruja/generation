@@ -20,21 +20,5 @@ public class exercicio3 {
         for (Integer listItem : lista){
             System.out.println(listItem);
         }
-
-        Set<Integer> conjunto = new HashSet<>();
-            conjunto.add(1);
-            conjunto.add(5);
-            conjunto.add(5);
-            conjunto.add(6);
-            conjunto.add(7);
-            conjunto.add(8);
-            conjunto.add(8);
-            conjunto.add(8);
-        System.out.println("\n-------------------\n");
-        System.out.println(conjunto);
-
-        for (Integer itemDoConjunto : conjunto){
-            System.out.println(itemDoConjunto);
-        }
     }
 }
