@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class exercicio2 {
+public class exercicio1b {
     public static void main(String[] args) {
         Map<String, List<String>> apelidos = new HashMap<>();
 
