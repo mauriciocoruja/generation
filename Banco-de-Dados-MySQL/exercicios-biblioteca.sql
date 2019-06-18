@@ -35,14 +35,18 @@ describe aluno;
 
 -- 9) Criar a tabela "emprestimo", conforme especificado no diagrama:
 create table emprestimo(
-	id_emprestimo integer primary key,
-    id_aluno integer,
-    id_livro integer,
+	id_emprestimo integer not null,
+    id_aluno integer not null,
+    id_livro integer not null,
     data_emprestimo date unique,
     data_entrega date,
-    FOREIGN KEY (id_aluno) REFERENCES aluno(id_aluno),
-    FOREIGN KEY (id_livro) REFERENCES livro(id_livro)    
+    primary key (id_emprestimo),
+    constraint uk_emprestimo unique key(id_emprestimo, id_aluno, id_livro),
+    constraint fk_livro_emprestimo foreign key (id_livro) references livro(id_livro),
+    constraint fk_aluno_emprestimo foreign key (id_aluno) references aluno(id_aluno)
 );
+
+drop table emprestimo;
 -- 10) Visualizar a estrutura da tabela "emprestimo":
 describe emprestimo;
 
