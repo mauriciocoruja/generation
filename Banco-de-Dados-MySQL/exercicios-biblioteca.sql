@@ -99,9 +99,21 @@ select * from emprestimo;
 
 -- JOINs
 	
--- 
 
 
+-- Mostrando todos os livros que os alunos pegaram emprestados -- categorias de alunos
+select
+a.id_aluno,
+a.nome,
+l.id_livro,
+l.titulo,
+c.categoria,
+e.data_emprestimo,
+e.data_entrega
+from aluno a
+join emprestimo e on a.id_aluno = e.id_aluno
+join livro l on e.id_livro = l.id_livro
+join categoria c on c.id_categoria = l.id_categoria;
 
 
 
