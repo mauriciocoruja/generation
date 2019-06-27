@@ -55,6 +55,11 @@ public class ClienteController {
         // Isso é igual a: "CREATE INTO cliente"
         return repository.save(cliente);
     }
+
+    @DeleteMapping("/clientes/{id}")
+    public void delete(@PathVariable Long id){
+        repository.deleteById(id);
+    }
 }
 
 
