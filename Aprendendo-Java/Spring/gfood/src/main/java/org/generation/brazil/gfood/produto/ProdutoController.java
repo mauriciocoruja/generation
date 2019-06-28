@@ -44,5 +44,6 @@ public class ProdutoController {
     @DeleteMapping("/produtos/{id}")
     public void delete(@PathVariable Long id){
         repository.deleteById(id);
+        System.out.println();
     }
 }
