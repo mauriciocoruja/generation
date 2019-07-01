@@ -26,5 +26,15 @@ create table cliente(
 insert into cliente(nome, cpf, endereco, datanascimento)
     values ('Pedro', '123.123.123-2','rua aurorinha,32','2000-01-01');
 
-select * from cliente
+select * from produto;
 
+alter table produto add column preco decimal not null;
+alter table produto change precinho preco decimal not null;
+
+insert into cliente (nome, cpf, endereco, datanascimento) VALUES ('Priscila','123.443.221-12','Rua Pacheco','');
+
+
+alter table produto add column datacasamento date
+
+-- comando para atualizar varios dados iguais
+-- update cliente set datanascimento = '0000-00-00' where datanascimento is null;

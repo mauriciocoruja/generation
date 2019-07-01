@@ -4,7 +4,10 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
+
 @Data
+
 
 @Entity
 public class Produto {
@@ -15,4 +18,5 @@ public class Produto {
     @NotNull
     private String nome;
     private String descricao;
+    private BigDecimal preco;
 }
