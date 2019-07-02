@@ -3,7 +3,6 @@ package org.generation.brazil.gfood.cliente;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -56,6 +55,10 @@ public class ClienteController {
     public List<Cliente> findAll(){
         // Isso é igual a: "SELECT * FROM cliente"
         return repository.findAll();
+    }
+    @GetMapping("/clientes/{id}")
+    public Optional<Cliente> findById(@PathVariable Long id){
+        return repository.findById(id);
     }
 
     //U do CRUD (Update)
