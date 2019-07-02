@@ -1,8 +1,6 @@
 package org.generation.brazil.gfood.cliente;
 
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +31,17 @@ public class ClienteController {
     public List<Cliente> findByNome(@RequestParam String nome){
         return repository.findByNome(nome);
     }
+
+    @GetMapping("/cliente/datanascimento/")
+    public Optional<Object> findByData(@PathVariable String datanascimento, @RequestBody Cliente nome)
+            throws ResourceNotFoundException {
+        return repository.findByData(datanascimento).map(cliente -> {
+            nome.getNome();
+            return repository.findByData(cliente);
+        }).orElseThrow(() ->
+                new ResourceNotFoundException("Não existe cliente cadastrado com essa  data de nascimento: "+datanascimento));
+    }
+
 
     @GetMapping("/clientes/{id}")
     public Optional<Cliente> findById(@PathVariable Long id){
