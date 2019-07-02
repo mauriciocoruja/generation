@@ -2,46 +2,18 @@ package org.generation.brazil.gfood.cliente;
 
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
-
-//@RestController
-//@Controller
-//@ResponseBody
-
-
-/* @GetMapping("/index")
- public String index(){
-     return "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n" +
-             "<ul class=\"nav justify-content-center\">\n" +
-             "  <li class=\"nav-item\">\n" +
-             "    <a class=\"nav-link active\" href=\"#\">Active</a>\n" +
-             "  </li>\n" +
-             "  <li class=\"nav-item\">\n" +
-             "    <a class=\"nav-link\" href=\"#\">Link</a>\n" +
-             "  </li>\n" +
-             "  <li class=\"nav-item\">\n" +
-             "    <a class=\"nav-link\" href=\"#\">Link</a>\n" +
-             "  </li>\n" +
-             "  <li class=\"nav-item\">\n" +
-             "    <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n" +
-             "  </li>\n" +
-             "</ul>";
- }
- @PostMapping("/post")
- public String post(){
-     return "Aqui eu uso o post";
- }*/
 @RestController
 public class ClienteController {
 
-    @Autowired
-    private ClienteRepository repository;
 
+    private ClienteRepository repository;
 
     //C DO CRUD (Create)
     @ResponseStatus(HttpStatus.CREATED)
@@ -54,8 +26,14 @@ public class ClienteController {
     @GetMapping("/clientes")
     public List<Cliente> findAll(){
         // Isso é igual a: "SELECT * FROM cliente"
-        return repository.findAll();
+        return (List<Cliente>) repository.findAll();
     }
+
+    @PostMapping("/clientes/nome")
+    public List<Cliente> findByNome(@RequestParam String nome){
+        return repository.findByNome(nome);
+    }
+
     @GetMapping("/clientes/{id}")
     public Optional<Cliente> findById(@PathVariable Long id){
         return repository.findById(id);
