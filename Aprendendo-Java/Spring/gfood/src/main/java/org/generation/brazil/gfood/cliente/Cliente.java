@@ -7,7 +7,6 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Data
-
 @Entity
 public class Cliente {
 

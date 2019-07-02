@@ -32,14 +32,9 @@ public class ClienteController {
         return repository.findByNome(nome);
     }
 
-    @GetMapping("/cliente/datanascimento/")
-    public Optional<Object> findByData(@PathVariable String datanascimento, @RequestBody Cliente nome)
-            throws ResourceNotFoundException {
-        return repository.findByData(datanascimento).map(cliente -> {
-            nome.getNome();
-            return repository.findByData(cliente);
-        }).orElseThrow(() ->
-                new ResourceNotFoundException("Não existe cliente cadastrado com essa  data de nascimento: "+datanascimento));
+    @PostMapping("/clientes/datanascomento")
+    public Optional<Object> findByData(@RequestParam String datanascimento){
+        return repository.findByData(datanascimento);
     }
 
 
