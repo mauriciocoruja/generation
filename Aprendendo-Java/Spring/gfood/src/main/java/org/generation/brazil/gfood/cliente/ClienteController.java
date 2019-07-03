@@ -39,6 +39,11 @@ public class ClienteController {
         return repository.findByDatanascimento(datanascimento);
     }
 
+    @PostMapping("/clientes/nomeedata")
+    public List<Cliente> findByNomeAndDatanascimento(@RequestParam String nome, @RequestParam Date datanascimento){
+        return repository.findByNomeAndDatanascimento(nome, datanascimento);
+    }
+
 
     @GetMapping("/clientes/{id}")
     public Optional<Cliente> findById(@PathVariable Long id){
