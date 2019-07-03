@@ -30,6 +30,7 @@ values ('Priscila','123.443.221-12','Rua Pacheco','1982-12-24'),
        ('Pedro', '123.123.123-2','rua aurorinha,32','2000-01-01');
 
 select * from cliente;
+describe produto
 
 -- alter table produto add column preco decimal not null;
 -- alter table produto change precinho preco decimal not null;

@@ -9,11 +9,14 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
+  // SELECT * FROM CLIENTE WHERE NOME = :NOME;
   List<Cliente> findByNome(String nome);
 
+  // SELECT * FROM CLIENTE WHERE DATANASCIMENTO = DATANASCIMENTO;
   List<Cliente> findByDatanascimento(Date datanascimento);
 
+  // SELECT * FROM CLIENTE WHERE NOME
   List<Cliente> findByNomeAndDatanascimento(String nome, Date datanascimento);
 
-  List<Cliente> findByNomeIsContaining(String nome);
+  List<Cliente> findByNomeContaining(String nome);
 }

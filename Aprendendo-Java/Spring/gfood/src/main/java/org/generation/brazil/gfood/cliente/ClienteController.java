@@ -47,29 +47,31 @@ public class ClienteController {
     }
 
     @PostMapping("/cliente/busca/nome")
-    public List<Cliente> findByNomeIsContaining(@RequestParam String nome){
-        return repository.findByNomeIsContaining(nome);
+    public List<Cliente> findByNomeContaining(@RequestParam String nome){
+        return repository.findByNomeContaining(nome);
+    }
+
+    @PutMapping("/cliente/alterar/nome")
+    public Cliente update(@RequestParam String cliente){
+        return (Cliente) repository.findByNomeContaining(cliente);
     }
 
 
-    @GetMapping("/clientes/{id}")
-    public Optional<Cliente> findById(@PathVariable Long id){
-        return repository.findById(id);
+
+    @PutMapping("/cliente/alterar/{id}")
+    public Cliente updateCliente(@PathVariable Long id, @RequestParam String nome)
+        throws ResourceNotFoundException {
+        return repository.findById(id).map(c -> {
+            c.setNome(nome);
+            return repository.save(c);
+        }).orElseThrow(() ->
+            new ResourceNotFoundException("Não existe cliente cadastrado com o id: "+id));
     }
+
 
     //U do CRUD (Update)
     @PutMapping("/clientes/{id}")
     public Cliente update(@PathVariable Long id, @RequestBody Cliente cliente)
-        //TODO Verificar modo mais simples de fazer o U do CRUD
-        /*return repository.findById(id).map(x ->{
-            x.setNome(cliente.getNome());
-            x.setEndereco(cliente.getEndereco());
-            return repository.save(x);
-        }).orElseGet(() ->{
-            cliente.setId(id);
-            return repository.save(cliente);
-        });*/
-    //A famigerada forma mais "facil" de fazer o U do CRUD
             throws ResourceNotFoundException {
         return repository.findById(id).map(clienteAtualizado -> {
             clienteAtualizado.setNome(cliente.getNome());
