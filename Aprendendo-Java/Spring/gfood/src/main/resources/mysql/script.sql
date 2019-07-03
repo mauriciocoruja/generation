@@ -21,9 +21,9 @@ create table cliente(
 );
 
 insert into produto (nome, descricao, preco)
-values ('Coxinha', 'Melhor coxinha de São Paulo'),
-       ('Risole', 'Risole mais top que você vai comer em toda a sua vida. Confia na call'),
-       ('Kibe', 'Topzera da Bahia');
+values ('Coxinha', 'Melhor coxinha de São Paulo',3),
+       ('Risole', 'Risole mais top que você vai comer em toda a sua vida. Confia na call',5),
+       ('Kibe', 'Topzera da Bahia',7.20);
 
 insert into cliente(nome, cpf, endereco, datanascimento)
 values ('Priscila','123.443.221-12','Rua Pacheco','1982-12-24'),

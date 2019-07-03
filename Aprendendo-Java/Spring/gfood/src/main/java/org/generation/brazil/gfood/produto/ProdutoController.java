@@ -1,5 +1,6 @@
 package org.generation.brazil.gfood.produto;
 
+import java.math.BigDecimal;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,6 +36,21 @@ public class ProdutoController {
     @GetMapping("/produtos/{id}")
     public Optional<Produto> findById(@PathVariable Long id){
         return repository.findById(id);
+    }
+
+    @PostMapping("/produtos/menorpreco")
+    public List<Produto> findByPrecoIsBefore(@RequestParam BigDecimal preco){
+        return repository.findByPrecoIsBefore(preco);
+    }
+
+    @PostMapping("/produtos/maiorpreco")
+    public List<Produto> findByPrecoIsAfter(@RequestParam BigDecimal preco){
+        return repository.findByPrecoIsAfter(preco);
+    }
+
+    @PostMapping("/produtos/precoentre")
+    public List<Produto> findByPrecoIsBetween(@RequestParam BigDecimal precoMin, @RequestParam BigDecimal precoMax){
+        return repository.findByPrecoIsBetween(precoMin, precoMax);
     }
 
     // CRUD (Update)
