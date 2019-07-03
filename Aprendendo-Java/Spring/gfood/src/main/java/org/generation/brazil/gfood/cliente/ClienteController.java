@@ -1,6 +1,8 @@
 package org.generation.brazil.gfood.cliente;
 
+import java.sql.Date;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +12,7 @@ import java.util.Optional;
 @RestController
 public class ClienteController {
 
-
+    @Autowired
     private ClienteRepository repository;
 
     //C DO CRUD (Create)
@@ -24,7 +26,7 @@ public class ClienteController {
     @GetMapping("/clientes")
     public List<Cliente> findAll(){
         // Isso é igual a: "SELECT * FROM cliente"
-        return (List<Cliente>) repository.findAll();
+        return repository.findAll();
     }
 
     @PostMapping("/clientes/nome")
@@ -32,9 +34,9 @@ public class ClienteController {
         return repository.findByNome(nome);
     }
 
-    @PostMapping("/clientes/datanascomento")
-    public Optional<Object> findByData(@RequestParam String datanascimento){
-        return repository.findByData(datanascimento);
+    @PostMapping("/clientes/datanascimento")
+    public List<Cliente> findByData(@RequestParam Date datanascimento){
+        return repository.findByDatanascimento(datanascimento);
     }
 
 

@@ -20,7 +20,7 @@ create table cliente(
                         primary key (id)
 );
 
-insert into produto (nome, descricao)
+insert into produto (nome, descricao, preco)
 values ('Coxinha', 'Melhor coxinha de São Paulo'),
        ('Risole', 'Risole mais top que você vai comer em toda a sua vida. Confia na call'),
        ('Kibe', 'Topzera da Bahia');

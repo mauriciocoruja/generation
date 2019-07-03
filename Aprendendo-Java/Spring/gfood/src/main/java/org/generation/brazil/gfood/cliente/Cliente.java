@@ -4,7 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
+import java.sql.Date;
 
 @Data
 @Entity
@@ -18,7 +18,7 @@ public class Cliente {
     private String nome;
     private String endereco;
 
-    @Temporal(TemporalType.DATE)
+    @Column(name = "datanascimento")
     private Date datanascimento;
 
 }

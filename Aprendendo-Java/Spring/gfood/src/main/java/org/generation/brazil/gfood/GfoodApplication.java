@@ -1,5 +1,6 @@
 package org.generation.brazil.gfood;
 
+import org.generation.brazil.gfood.produto.Produto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

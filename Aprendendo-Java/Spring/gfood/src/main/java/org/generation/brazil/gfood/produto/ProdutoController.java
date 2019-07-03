@@ -1,18 +1,14 @@
 package org.generation.brazil.gfood.produto;
 
-import org.generation.brazil.gfood.cliente.Cliente;
 import org.generation.brazil.gfood.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-@EnableJpaRepositories
 
 @RestController
-//@Table(name = "produtos")
 public class ProdutoController {
 
     @Autowired
