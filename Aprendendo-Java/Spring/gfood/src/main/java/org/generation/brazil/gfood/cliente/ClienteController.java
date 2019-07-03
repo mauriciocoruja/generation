@@ -12,6 +12,8 @@ import java.util.Optional;
 @RestController
 public class ClienteController {
 
+
+
     @Autowired
     private ClienteRepository repository;
 
@@ -42,6 +44,11 @@ public class ClienteController {
     @PostMapping("/clientes/nomeedata")
     public List<Cliente> findByNomeAndDatanascimento(@RequestParam String nome, @RequestParam Date datanascimento){
         return repository.findByNomeAndDatanascimento(nome, datanascimento);
+    }
+
+    @PostMapping("/cliente/busca/nome")
+    public List<Cliente> findByNomeIsContaining(@RequestParam String nome){
+        return repository.findByNomeIsContaining(nome);
     }
 
 

@@ -17,6 +17,7 @@ public class Cliente {
     @NotNull
     private String nome;
     private String endereco;
+    private String cpf;
 
     @Column(name = "datanascimento")
     private Date datanascimento;
