@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class ClienteController {
@@ -87,6 +86,9 @@ public class ClienteController {
     public void delete(@PathVariable Long id){
         repository.deleteById(id);
     }
+
+    @DeleteMapping("/cliente/deletar")
+    public void deleteByNomeAndDatanascimento(@RequestParam String nome,@RequestParam Date data){
+        repository.deleteByNomeAndDatanascimento(nome, data);
+    }
 }
-
-
