@@ -1,6 +1,7 @@
 drop database gfood;
 create database gfood;
 
+
 use gfood;
 
 create table produto(
@@ -20,16 +21,7 @@ create table cliente(
                         primary key (id)
 );
 
-insert into produto (nome, descricao, preco)
-values ('Coxinha', 'Melhor coxinha de São Paulo',3),
-       ('Risole', 'Risole mais top que você vai comer em toda a sua vida. Confia na call',5),
-       ('Kibe', 'Topzera da Bahia',7.20);
-
-insert into cliente(nome, cpf, endereco, datanascimento)
-values ('Priscila','123.443.221-12','Rua Pacheco','1982-12-24'),
-       ('Pedro', '123.123.123-2','rua aurorinha,32','2000-01-01');
-
-select * from cliente;
+select * from produto;
 describe produto
 
 -- alter table produto add column preco decimal not null;

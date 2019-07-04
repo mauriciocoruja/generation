@@ -58,8 +58,8 @@ public class ClienteController {
 
 
 
-    @PutMapping("/cliente/alterar/{id}")
-    public Cliente updateCliente(@PathVariable Long id, @RequestParam String nome)
+    @PutMapping("/cliente/alterar")
+    public Cliente updateCliente(@RequestParam Long id, @RequestParam String nome)
         throws ResourceNotFoundException {
         return repository.findById(id).map(c -> {
             c.setNome(nome);
