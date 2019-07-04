@@ -80,6 +80,16 @@ public class ProdutoController {
     @DeleteMapping("/produtos/{id}")
     public void delete(@PathVariable Long id){
         repository.deleteById(id);
-        System.out.println();
+    }
+
+
+    @DeleteMapping("/produtos/deletar-entre")
+    public void deleteBntre(@RequestParam BigDecimal precoMin, @RequestParam BigDecimal precoMax){
+        repository.deleteByPrecoIsBetween(precoMin,precoMax);
+    }
+
+    @DeleteMapping("/produtos/deletar-abaixo")
+    public void deletarMenorQue(@RequestParam BigDecimal preco){
+        repository.deleteByPrecoLessThan(preco);
     }
 }
