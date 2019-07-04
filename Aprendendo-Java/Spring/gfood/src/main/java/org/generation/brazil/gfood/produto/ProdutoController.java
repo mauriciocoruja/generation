@@ -53,6 +53,16 @@ public class ProdutoController {
         return repository.findByPrecoIsBetween(precoMin, precoMax);
     }
 
+    @PutMapping("/produtos/alterar")
+    public Produto updateProduto(@RequestParam Long id, @RequestParam String nome)
+        throws ResourceNotFoundException {
+        return repository.findById(id).map(c -> {
+            c.setNome(nome);
+            return repository.save(c);
+        }).orElseThrow(() ->
+            new ResourceNotFoundException("Não existe produto cadastrado com o id: "+id));
+    }
+
     // CRUD (Update)
     @PutMapping("/produtos/{id}")
     public Produto update(@PathVariable Long id, @RequestBody Produto produto)
