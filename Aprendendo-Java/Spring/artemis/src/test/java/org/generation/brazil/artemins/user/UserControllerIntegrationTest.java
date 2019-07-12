@@ -3,6 +3,7 @@ package org.generation.brazil.artemins.user;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import com.github.javafaker.Faker;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.generation.brazil.artemins.ArtemisApplication;
 import org.junit.Test;
@@ -34,7 +35,7 @@ public class UserControllerIntegrationTest {
         return "http://localhost:" + port + "/api/v1" + path;
     }
 
-    private String gerarNome(){
+/*    private String gerarNome(){
         String nome = RandomStringUtils.randomAlphabetic(10);
         return nome;
     }
@@ -51,17 +52,21 @@ public class UserControllerIntegrationTest {
     private String gerarSenha(){
         String senha = RandomStringUtils.randomAlphanumeric(5);
         return senha;
-    }
+    }*/
 
     @Test
     public void testCreate(){
-        User u = new User();
-        u.setNome(gerarNome());
-        u.setEmail(gerarEmail());
-        u.setLogin(gerarUsuario());
-        u.setSenha(gerarSenha());
+/*        User u = new User();
+        Faker faker = new Faker();
 
-        ResponseEntity<User> postResponse = testRestTemplate.postForEntity(getRootUrl("/user"),u, User.class);
+        u.setNome(faker.name().firstName());
+        u.setEmail(faker.internet().emailAddress());
+        u.setLogin(faker.name().username());
+        u.setSenha(faker.internet().password());*/
+
+    User newUser = UserMock.getUserMock();
+
+        ResponseEntity<User> postResponse = testRestTemplate.postForEntity(getRootUrl("/user"),newUser, User.class);
 
         assertNotNull(postResponse);
 

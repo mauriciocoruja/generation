@@ -1,5 +1,7 @@
 package org.generation.brazil.artemins.user;
 
+import com.github.javafaker.FunnyName;
+import com.github.javafaker.Name;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -44,5 +46,4 @@ public class User {
     @NotBlank
     @Size(max = 100)
     private String senha;
-
 }
