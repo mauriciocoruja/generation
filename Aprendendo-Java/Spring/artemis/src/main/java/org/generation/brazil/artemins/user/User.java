@@ -1,5 +1,6 @@
 package org.generation.brazil.artemins.user;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -7,8 +8,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "user", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
