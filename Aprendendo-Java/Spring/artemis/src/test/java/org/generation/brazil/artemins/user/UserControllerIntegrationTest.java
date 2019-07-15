@@ -9,9 +9,13 @@ import org.generation.brazil.artemins.ArtemisApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -72,4 +76,26 @@ public class UserControllerIntegrationTest {
 
         assertEquals(201, postResponse.getStatusCodeValue());
     }
+
+    @Test
+    public void testSearchAllUsers(){
+        HttpHeaders header = new HttpHeaders();
+        HttpEntity<String> entity = new HttpEntity<>(null, header);
+        ResponseEntity<String> response = testRestTemplate.exchange(getRootUrl("/users"), HttpMethod.GET, entity, String.class);
+        assertNotNull(response.getBody());
+        assertEquals(200,response.getStatusCodeValue());
+    }
+
+    @Test
+    public void searchById(){
+        int id = 2;
+        HttpHeaders header = new HttpHeaders();
+        HttpEntity<String> entity = new HttpEntity<>(null, header);
+
+        ResponseEntity<String> response = testRestTemplate.exchange(getRootUrl("/users/"+id),HttpMethod.GET,entity,String.class);
+
+        assertNotNull(response.getBody());
+        assertEquals(404,response.getStatusCodeValue());
+    }
+
 }
